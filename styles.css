@@ -1,212 +1,280 @@
-/* Global Reset */
+/* General Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Body and basic layout */
 body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Navbar */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav .logo a {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
     font-size: 16px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Hero Section */
-.hero {
+/* Navbar Styles */
+nav {
     background-color: #333;
     color: #fff;
-    padding: 80px 0;
+    padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav h1.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: #00bcd4;
+    color: #fff;
+    padding: 5rem 0;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-btn {
-    background-color: #ff6600;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+    background-color: #fff;
+    color: #00bcd4;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #ff4500;
+    background-color: #00bcd4;
+    color: #fff;
 }
 
-/* About Section */
+/* About Section Styles */
 .about {
-    padding: 50px 0;
     background-color: #fff;
-    text-align: center;
+    padding: 4rem 0;
 }
 
 .about h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .about p {
-    font-size: 18px;
-    max-width: 700px;
+    font-size: 1.1rem;
+    max-width: 800px;
     margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
 }
 
-/* Skills Section */
+/* Skills Section Styles */
 .skills {
-    padding: 50px 0;
     background-color: #f9f9f9;
-    text-align: center;
+    padding: 4rem 0;
 }
 
 .skills h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .skill-list {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .skill {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    width: 150px;
+    padding: 2rem;
+    width: 200px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill h3 {
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #333;
 }
 
-/* Projects Section */
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Projects Section Styles */
 .projects {
-    padding: 50px 0;
     background-color: #fff;
-    text-align: center;
+    padding: 4rem 0;
 }
 
 .projects h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .project-list {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project {
     background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    width: 250px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 300px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
 .project p {
-    font-size: 16px;
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Contact Section */
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section Styles */
 .contact {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 4rem 0;
     text-align: center;
 }
 
 .contact h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-/* Footer */
+.contact .cta-btn {
+    background-color: #fff;
+    color: #00bcd4;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact .cta-btn:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 1rem 0;
     text-align: center;
 }
 
 footer p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
     .skill-list, .project-list {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    .skill, .project {
+        width: 90%;
     }
+
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin-left: 1rem;
+    }
+}
+
 
     nav ul li {
         margin: 10px 0;
