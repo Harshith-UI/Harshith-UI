@@ -113,28 +113,6 @@ nav ul li a:hover {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* About Section Styles */
-.about {
-    background-color: #fff;
-    padding: 4rem 0;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    margin-top: -5rem;
-}
-
-.about h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.about p {
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 /* Skills Section Styles */
 .skills {
     padding: 6rem 0;
@@ -166,6 +144,8 @@ nav ul li a:hover {
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex-basis: 28%;
+    position: relative;
+    border: 2px solid transparent; /* Invisible border for the animation */
 }
 
 .skill h3 {
@@ -182,6 +162,23 @@ nav ul li a:hover {
 .skill:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff7c00; /* Golden border glow on hover */
+}
+
+.skill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.skill:hover::before {
+    box-shadow: 0 0 15px 5px rgba(255, 124, 0, 0.6); /* Soft golden glow */
 }
 
 /* Projects Section Styles */
@@ -214,6 +211,8 @@ nav ul li a:hover {
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 48%;
+    position: relative;
+    border: 2px solid transparent; /* Invisible border for the animation */
 }
 
 .project h3 {
@@ -226,6 +225,23 @@ nav ul li a:hover {
 .project:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border: 2px solid #8e44ad; /* Purple border glow on hover */
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.project:hover::before {
+    box-shadow: 0 0 15px 5px rgba(142, 68, 173, 0.6); /* Purple glow */
 }
 
 /* Contact Section Styles */
@@ -297,3 +313,4 @@ footer p {
         flex-direction: column;
     }
 }
+
