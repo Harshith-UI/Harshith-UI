@@ -16,9 +16,9 @@
 ![Playwright](https://img.shields.io/badge/Playwright-%23121011.svg?style=for-the-badge&logo=playwright&logoColor=green)
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=harshithkapuluru&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=harshithkapuluru&theme=tokyonight&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=harshithkapuluru&theme=tokyonight&hide_border=false&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=Harshith-UI&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=Harshith-UI&theme=tokyonight&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Harshith-UI&theme=tokyonight&hide_border=false&layout=compact)
 
 ---
 
